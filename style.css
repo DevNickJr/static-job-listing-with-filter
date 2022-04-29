@@ -1,0 +1,105 @@
+
+:root {
+    --desat-dark-cyan: hsl(180, 29%, 50%);
+    --light-gray: hsl(180, 52%, 96%);
+    --light-gray-cyan: hsl(180, 31%, 95%);
+    --dark-grayish: hsl(180, 8%, 52%);
+    --very-dark-gray: hsl(180, 14%, 20%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    background-color: var(--light-gray);
+}
+
+header img {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--desat-dark-cyan);
+}
+
+main {
+    padding: .8rem 1rem;
+}
+
+.card {
+    position: relative;
+    padding: 2.5rem 1rem 2rem;
+    margin: 3.5rem auto;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 6px solid var(--desat-dark-cyan);
+    box-shadow: 0 0 30px var(--desat-dark-cyan);
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);  
+}
+
+.card__top {
+    display: flex;
+    align-items: center;
+    margin: .1rem auto .8rem;
+}
+.card__tool {
+    margin-right: 1rem;
+    color: var(--desat-dark-cyan);
+    font-weight: 700;
+}
+.card__extra {
+    padding: .4rem .6rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto .5rem;
+}
+
+.card__new-item {
+    background-color: var(--desat-dark-cyan);
+}
+
+.card__featured {
+    background-color: var(--very-dark-gray);
+}
+.card__role-level {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card__description {
+    display: flex;
+    gap: 30px;
+    margin: 1rem auto;
+    color: var(--dark-grayish);
+}
+.card li:first-child {
+    list-style-type: none;
+}
+
+.card__expertise {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card__expertise span {
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--light-gray-cyan);
+    color: var(--desat-dark-cyan);
+}
+/* .card__language {
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--light-gray-cyan);
+    color: var(--desat-dark-cyan);
+} */
