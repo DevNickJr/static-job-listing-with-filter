@@ -25,6 +25,9 @@ header img {
 
 main {
     padding: .8rem 1rem;
+    position: relative;
+    width: 90%;
+    margin: auto;
 }
 
 .card {
@@ -96,10 +99,43 @@ main {
     background-color: var(--light-gray-cyan);
     color: var(--desat-dark-cyan);
 }
-/* .card__language {
+.card__language, .card__role, .card__level {
     font-weight: 700;
     padding: .5rem;
     border-radius: 5px;
     background-color: var(--light-gray-cyan);
     color: var(--desat-dark-cyan);
-} */
+}
+
+.filter-list {
+    border: none;
+    margin: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    z-index: 2;
+    display: flex;
+    /* transform: translate(0, -100%); */
+
+}
+.filter__div {
+    display: flex;
+    align-items: center;
+}
+
+.remove {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    background: var(--desat-dark-cyan);
+    background-image: url('./images/icon-remove.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
